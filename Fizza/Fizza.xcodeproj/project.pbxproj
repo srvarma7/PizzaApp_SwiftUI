@@ -14,6 +14,8 @@
 		808DD990250228B700CF8BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808DD98F250228B700CF8BC2 /* Assets.xcassets */; };
 		808DD993250228B700CF8BC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808DD992250228B700CF8BC2 /* Preview Assets.xcassets */; };
 		808DD996250228B700CF8BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DD994250228B700CF8BC2 /* LaunchScreen.storyboard */; };
+		808DD99F25022BEB00CF8BC2 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD99E25022BEB00CF8BC2 /* ImagePickerView.swift */; };
+		808DD9A125034CBF00CF8BC2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD9A025034CBF00CF8BC2 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		808DD992250228B700CF8BC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		808DD995250228B700CF8BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808DD997250228B700CF8BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808DD99E25022BEB00CF8BC2 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		808DD9A025034CBF00CF8BC2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		807303F1250356F50082C789 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		808DD97A250228B300CF8BC2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +69,10 @@
 		808DD985250228B300CF8BC2 /* Fizza */ = {
 			isa = PBXGroup;
 			children = (
+				807303F1250356F50082C789 /* Modal */,
+				808DD99D25022BD800CF8BC2 /* View */,
 				808DD986250228B300CF8BC2 /* AppDelegate.swift */,
 				808DD988250228B300CF8BC2 /* SceneDelegate.swift */,
-				808DD98A250228B300CF8BC2 /* ContentView.swift */,
 				808DD98F250228B700CF8BC2 /* Assets.xcassets */,
 				808DD994250228B700CF8BC2 /* LaunchScreen.storyboard */,
 				808DD997250228B700CF8BC2 /* Info.plist */,
@@ -76,6 +88,16 @@
 				808DD992250228B700CF8BC2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		808DD99D25022BD800CF8BC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				808DD99E25022BEB00CF8BC2 /* ImagePickerView.swift */,
+				808DD98A250228B300CF8BC2 /* ContentView.swift */,
+				808DD9A025034CBF00CF8BC2 /* ImageView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,10 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808DD9A125034CBF00CF8BC2 /* ImageView.swift in Sources */,
 				808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */,
 				808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */,
 				808DD98E250228B300CF8BC2 /* Fizza.xcdatamodeld in Sources */,
 				808DD98B250228B300CF8BC2 /* ContentView.swift in Sources */,
+				808DD99F25022BEB00CF8BC2 /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Fizza/Preview Content\"";
+				DEVELOPMENT_TEAM = 5G9HGCW6QY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +337,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Fizza/Preview Content\"";
+				DEVELOPMENT_TEAM = 5G9HGCW6QY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
