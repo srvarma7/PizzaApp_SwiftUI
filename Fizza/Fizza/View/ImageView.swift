@@ -13,7 +13,7 @@ struct ImageView: View {
     @Binding var pickedImage: Image?
     
     var body: some View {
-        ImagePickerView(showImagePicker: $showImgPicker, pickedImage: $pickedImage)
+        ImagePickerRepresentableView(showImagePicker: $showImgPicker, pickedImage: $pickedImage)
     }
 }
 

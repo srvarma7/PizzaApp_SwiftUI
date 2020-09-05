@@ -2,52 +2,48 @@
 //  ImagePickerView.swift
 //  Fizza
 //
-//  Created by Sai Raghu Varma Kallepalli on 4/9/20.
+//  Created by Sai Raghu Varma Kallepalli on 5/9/20.
 //
 
-import Foundation
 import SwiftUI
 
-class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+struct ImagePickerView: View {
+    @State private var showImgPicker: Bool = false
+    @State private var pickedImage: Image? = nil
     
-    @Binding var showImagePicker: Bool
-    @Binding var pickedImage: Image?
-    
-    init(shown: Binding<Bool>, picked: Binding<Image?>) {
-        _showImagePicker = shown
-        _pickedImage = picked
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    var body: some View {
         
-        let uiImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        pickedImage = Image(uiImage: uiImage)
-        
-        self.showImagePicker = false
+        VStack {
+            Text("Pick the image to provide rating")
+                
+            pickedImage?
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
+                .clipped()
+                .padding()
+            
+            Button("Open Gallery", action: {
+                self.showImgPicker = true
+            })
+            .padding(8)
+            .background(Color.green)
+            .foregroundColor(.white)
+            .cornerRadius(15)
+            
+        }
+        .sheet(isPresented: $showImgPicker,
+                onDismiss: {
+                    self.showImgPicker = false
+                },
+                content: {
+                    ImagePickerRepresentableView(showImagePicker: $showImgPicker, pickedImage: $pickedImage)
+                })
     }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        self.showImagePicker = false
-    }
-    
 }
 
-struct ImagePickerView: UIViewControllerRepresentable {
-    
-    @Binding var showImagePicker: Bool
-    @Binding var pickedImage: Image?
-    
-    func makeCoordinator() -> ImagePickerCoordinator {
-        return ImagePickerCoordinator(shown: $showImagePicker, picked: $pickedImage)
-    }
-    
-    func makeUIViewController(context: Context) -> some UIViewController {
-        let picker = UIImagePickerController()
-        picker.delegate = context.coordinator
-        return picker
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        //
+struct ImagePickerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ImagePickerView()
     }
 }
