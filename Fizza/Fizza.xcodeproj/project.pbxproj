@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		807303F52503666E0082C789 /* FizzaModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807303F42503666E0082C789 /* FizzaModal.swift */; };
 		808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD986250228B300CF8BC2 /* AppDelegate.swift */; };
 		808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD988250228B300CF8BC2 /* SceneDelegate.swift */; };
 		808DD98B250228B300CF8BC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD98A250228B300CF8BC2 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		807303F42503666E0082C789 /* FizzaModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzaModal.swift; sourceTree = "<group>"; };
 		808DD983250228B300CF8BC2 /* Fizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DD986250228B300CF8BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808DD988250228B300CF8BC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		807303F1250356F50082C789 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				807303F42503666E0082C789 /* FizzaModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */,
 				808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */,
 				808DD98E250228B300CF8BC2 /* Fizza.xcdatamodeld in Sources */,
+				807303F52503666E0082C789 /* FizzaModal.swift in Sources */,
 				808DD98B250228B300CF8BC2 /* ContentView.swift in Sources */,
 				808DD99F25022BEB00CF8BC2 /* ImagePickerView.swift in Sources */,
 			);
