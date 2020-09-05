@@ -23,22 +23,27 @@ struct FizzaListView: View {
                                             .font(.headline)
                                         Spacer()
                                         Image(systemName: "star")
-                                    }) { //item in
-                                        ForEach(fizza.items, id: \.name) { item in
-                                            HStack {
-                                                Text(item.name)
-                                                Spacer()
-                                                Text(String(format: "%.2f", item.price))
-                                                    .foregroundColor(Color.gray)
-                                            }
-                                            
-                                        }
-                            
+                                    })
+                        {
+                            ForEach(fizza.items, id: \.name) { item in
+                                HStack {
+                                    Text(item.name)
+                                    Spacer()
+                                    Text(String(format: "%.2f", item.price))
+                                        .foregroundColor(Color.gray)
+                                }
+                            }
                         }
                     }
-                }.listStyle(GroupedListStyle())
+                }
+                .listStyle(SidebarListStyle())
+                //CarouselListStyle, DefaultListStyle, EllipticalListStyle, GroupedListStyle, InsetGroupedListStyle, InsetListStyle, PlainListStyle, SidebarListStyle
+
             }
-            .navigationTitle("Fizzas")
+            .navigationTitle("Fizza Menu")
+            .navigationViewStyle(
+                DefaultNavigationViewStyle())
+            //DefaultNavigationViewStyle,DoubleColumnNavigationViewStyle,StackNavigationViewStyle
         }
     }
 }
