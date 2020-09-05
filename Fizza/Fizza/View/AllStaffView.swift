@@ -10,24 +10,26 @@ import SwiftUI
 struct AllStaffView: View {
     
     private var allStaff = Staff.getAllStaff()
+    @State private var enteredSearchText: String = ""
     
     var body: some View {
         NavigationView {
             VStack {
-                
+                SearchBarViewRepresentable(searchText: $enteredSearchText)
+                    .padding([.leading, .trailing], 15)
                 List {
-                    ForEach(self.allStaff, id: \.name) { staff in
+                    ForEach(self.allStaff
+                                .filter {
+                                    self.enteredSearchText.isEmpty ? true : $0.name.localizedCaseInsensitiveContains(self.enteredSearchText)
+                                }
+                            , id: \.name) { staff in
                         HStack {
                             Text(staff.name)
-                                .font(.title)
                             Spacer()
                             Text(staff.post.rawValue)
-                                .font(.body)
-                                .foregroundColor(.blue)
-                                .opacity(0.9)
+                                .foregroundColor(Color.gray)
                         }
                     }
-                    
                 }
                 
                 .navigationTitle("Fizza Staff")

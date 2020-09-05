@@ -20,6 +20,7 @@
 		808DD996250228B700CF8BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DD994250228B700CF8BC2 /* LaunchScreen.storyboard */; };
 		808DD99F25022BEB00CF8BC2 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD99E25022BEB00CF8BC2 /* ImagePickerView.swift */; };
 		808DD9A125034CBF00CF8BC2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD9A025034CBF00CF8BC2 /* ImageView.swift */; };
+		80BA2E702503740900E46B23 /* SearchBarViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E6F2503740900E46B23 /* SearchBarViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		808DD997250228B700CF8BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808DD99E25022BEB00CF8BC2 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		808DD9A025034CBF00CF8BC2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		80BA2E6F2503740900E46B23 /* SearchBarViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				808DD99E25022BEB00CF8BC2 /* ImagePickerView.swift */,
-				808DD98A250228B300CF8BC2 /* ContentView.swift */,
 				808DD9A025034CBF00CF8BC2 /* ImageView.swift */,
+				808DD98A250228B300CF8BC2 /* ContentView.swift */,
 				807303F6250366AE0082C789 /* FizzaListView.swift */,
 				807303FC2503710A0082C789 /* AllStaffView.swift */,
+				80BA2E6F2503740900E46B23 /* SearchBarViewRepresentable.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				807303F925036C8B0082C789 /* StaffModal.swift in Sources */,
 				807303F7250366AE0082C789 /* FizzaListView.swift in Sources */,
 				808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */,
+				80BA2E702503740900E46B23 /* SearchBarViewRepresentable.swift in Sources */,
 				808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */,
 				808DD98E250228B300CF8BC2 /* Fizza.xcdatamodeld in Sources */,
 				807303F52503666E0082C789 /* FizzaModal.swift in Sources */,

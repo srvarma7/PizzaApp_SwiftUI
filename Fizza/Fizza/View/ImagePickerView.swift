@@ -30,8 +30,6 @@ class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImageP
         self.showImagePicker = false
     }
     
-    
-    
 }
 
 struct ImagePickerView: UIViewControllerRepresentable {
