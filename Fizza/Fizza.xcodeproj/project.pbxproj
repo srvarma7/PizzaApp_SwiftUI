@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		807303F52503666E0082C789 /* FizzaModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807303F42503666E0082C789 /* FizzaModal.swift */; };
 		807303F7250366AE0082C789 /* FizzaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807303F6250366AE0082C789 /* FizzaListView.swift */; };
+		807303F925036C8B0082C789 /* StaffModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807303F825036C8B0082C789 /* StaffModal.swift */; };
 		808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD986250228B300CF8BC2 /* AppDelegate.swift */; };
 		808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD988250228B300CF8BC2 /* SceneDelegate.swift */; };
 		808DD98B250228B300CF8BC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD98A250228B300CF8BC2 /* ContentView.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		807303F42503666E0082C789 /* FizzaModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzaModal.swift; sourceTree = "<group>"; };
 		807303F6250366AE0082C789 /* FizzaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzaListView.swift; sourceTree = "<group>"; };
+		807303F825036C8B0082C789 /* StaffModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffModal.swift; sourceTree = "<group>"; };
 		808DD983250228B300CF8BC2 /* Fizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DD986250228B300CF8BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808DD988250228B300CF8BC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				807303F42503666E0082C789 /* FizzaModal.swift */,
+				807303F825036C8B0082C789 /* StaffModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				808DD9A125034CBF00CF8BC2 /* ImageView.swift in Sources */,
+				807303F925036C8B0082C789 /* StaffModal.swift in Sources */,
 				807303F7250366AE0082C789 /* FizzaListView.swift in Sources */,
 				808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */,
 				808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */,
