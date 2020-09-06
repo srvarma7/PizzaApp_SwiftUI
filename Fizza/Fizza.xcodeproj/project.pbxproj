@@ -25,6 +25,7 @@
 		80BA2E742503BD5A00E46B23 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E732503BD5A00E46B23 /* ThemeView.swift */; };
 		80BA2E762503C69500E46B23 /* ModeSettingsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E752503C69500E46B23 /* ModeSettingsViewModal.swift */; };
 		80BA2E7825046EB800E46B23 /* DownloadedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E7725046EB800E46B23 /* DownloadedImageView.swift */; };
+		80BA2E7B25046F6100E46B23 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E7A25046F6100E46B23 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		80BA2E732503BD5A00E46B23 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		80BA2E752503C69500E46B23 /* ModeSettingsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSettingsViewModal.swift; sourceTree = "<group>"; };
 		80BA2E7725046EB800E46B23 /* DownloadedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedImageView.swift; sourceTree = "<group>"; };
+		80BA2E7A25046F6100E46B23 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		80BA2E7925046EBF00E46B23 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				80BA2E7A25046F6100E46B23 /* ImageDownloader.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				808DD9A125034CBF00CF8BC2 /* ImageView.swift in Sources */,
 				807303F925036C8B0082C789 /* StaffModal.swift in Sources */,
+				80BA2E7B25046F6100E46B23 /* ImageDownloader.swift in Sources */,
 				807303F7250366AE0082C789 /* FizzaListView.swift in Sources */,
 				80BA2E742503BD5A00E46B23 /* ThemeView.swift in Sources */,
 				808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */,
