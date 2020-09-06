@@ -23,6 +23,8 @@
 		80BA2E702503740900E46B23 /* SearchBarViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E6F2503740900E46B23 /* SearchBarViewRepresentable.swift */; };
 		80BA2E722503BC9900E46B23 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E712503BC9900E46B23 /* ImagePickerView.swift */; };
 		80BA2E742503BD5A00E46B23 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E732503BD5A00E46B23 /* ThemeView.swift */; };
+		80BA2E762503C69500E46B23 /* ModeSettingsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E752503C69500E46B23 /* ModeSettingsViewModal.swift */; };
+		80BA2E7825046EB800E46B23 /* DownloadedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E7725046EB800E46B23 /* DownloadedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		80BA2E6F2503740900E46B23 /* SearchBarViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewRepresentable.swift; sourceTree = "<group>"; };
 		80BA2E712503BC9900E46B23 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		80BA2E732503BD5A00E46B23 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		80BA2E752503C69500E46B23 /* ModeSettingsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSettingsViewModal.swift; sourceTree = "<group>"; };
+		80BA2E7725046EB800E46B23 /* DownloadedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			children = (
 				807303F42503666E0082C789 /* FizzaModal.swift */,
 				807303F825036C8B0082C789 /* StaffModal.swift */,
+				80BA2E752503C69500E46B23 /* ModeSettingsViewModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 		808DD985250228B300CF8BC2 /* Fizza */ = {
 			isa = PBXGroup;
 			children = (
+				80BA2E7925046EBF00E46B23 /* WebService */,
 				807303F1250356F50082C789 /* Modal */,
 				808DD99D25022BD800CF8BC2 /* View */,
 				808DD986250228B300CF8BC2 /* AppDelegate.swift */,
@@ -117,8 +123,16 @@
 				807303FC2503710A0082C789 /* AllStaffView.swift */,
 				80BA2E6F2503740900E46B23 /* SearchBarViewRepresentable.swift */,
 				80BA2E732503BD5A00E46B23 /* ThemeView.swift */,
+				80BA2E7725046EB800E46B23 /* DownloadedImageView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		80BA2E7925046EBF00E46B23 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +211,14 @@
 				80BA2E742503BD5A00E46B23 /* ThemeView.swift in Sources */,
 				808DD987250228B300CF8BC2 /* AppDelegate.swift in Sources */,
 				80BA2E722503BC9900E46B23 /* ImagePickerView.swift in Sources */,
+				80BA2E762503C69500E46B23 /* ModeSettingsViewModal.swift in Sources */,
 				80BA2E702503740900E46B23 /* SearchBarViewRepresentable.swift in Sources */,
 				808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */,
 				808DD98E250228B300CF8BC2 /* Fizza.xcdatamodeld in Sources */,
 				807303F52503666E0082C789 /* FizzaModal.swift in Sources */,
 				807303FD2503710A0082C789 /* AllStaffView.swift in Sources */,
 				808DD98B250228B300CF8BC2 /* ContentView.swift in Sources */,
+				80BA2E7825046EB800E46B23 /* DownloadedImageView.swift in Sources */,
 				808DD99F25022BEB00CF8BC2 /* ImagePickerRepresentableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

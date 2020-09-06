@@ -9,28 +9,28 @@ import SwiftUI
 
 struct ThemeView: View {
     
-    @State private var darkTheme: Bool = false
+    @ObservedObject private var settingsVM = ModeSettingsViewModal()
     
     var body: some View {
         ZStack {
-            Color(darkTheme ? .black: .white)
+            Color(settingsVM.isDarkModeEnabled ? .black: .white)
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                Text(darkTheme ? "Dark theme is enabled": "Dark theme is disabled")
+                Text(settingsVM.isDarkModeEnabled ? "Dark theme is enabled": "Dark theme is disabled")
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.all, 10)
-                    .foregroundColor(!darkTheme ? .black: .white)
+                    .foregroundColor(!settingsVM.isDarkModeEnabled ? .black: .white)
                 Spacer()
                 Button("Change Theme", action: {
                     withAnimation(.linear(duration: 0.4)) {
-                        self.darkTheme.toggle()
+                        self.settingsVM.isDarkModeEnabled.toggle()
                     }
                 })
                 .padding()
                 .font(.title)
-                .foregroundColor(darkTheme ? .black: .white)
+                .foregroundColor(settingsVM.isDarkModeEnabled ? .black: .white)
                 .background(Color.green)
                 .cornerRadius(25)
             }
