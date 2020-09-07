@@ -13,10 +13,6 @@ class ImageDownloader: ObservableObject {
     
     @Published var downloadedImageData: Data?
     
-    init(imageData: Data) {
-        self.downloadedImageData = imageData
-    }
-    
     func getImage(link: String) {
         convertLinkToURL(link: link)
     }
@@ -37,6 +33,7 @@ class ImageDownloader: ObservableObject {
             }
             DispatchQueue.main.async {
                 self.downloadedImageData = data
+                print(data)
             }
         }.resume()
     }

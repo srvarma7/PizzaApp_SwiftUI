@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Text("")
+            WebImageView(link: "https://storage.googleapis.com/swift-images/SwiftUI/building.jpg")
         }
     }
 }
