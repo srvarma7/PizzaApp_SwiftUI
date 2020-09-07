@@ -12,7 +12,24 @@ struct ContentView: View {
     @State var viewOpened: Bool = false
     
     var body: some View {
-        Text("")
+        NavigationView {
+            List {
+                
+                NavigationLink("UIImage Picker", destination: ImagePickerView())
+                
+                NavigationLink("Multilevel list", destination: FizzaListView())
+                
+                NavigationLink("UISearchBar", destination: AllStaffView())
+                    
+                NavigationLink("User defaults", destination: ThemeView())
+                
+                NavigationLink("Web image downloader", destination: WebImagesListView())
+                
+                NavigationLink("Rating", destination: StartRatingListView())
+                
+            }
+            .navigationTitle("Home screen")
+        }
     }
 }
 
