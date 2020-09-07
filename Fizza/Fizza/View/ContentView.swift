@@ -9,11 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var viewOpened: Bool = false
+    
     var body: some View {
-        
-        VStack {
-            WebImageView(link: "https://storage.googleapis.com/swift-images/SwiftUI/building.jpg")
-        }
+        Text("")
     }
 }
 

@@ -27,6 +27,8 @@
 		80BA2E7B25046F6100E46B23 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E7A25046F6100E46B23 /* ImageDownloader.swift */; };
 		80BA2E7D2505C40D00E46B23 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E7C2505C40D00E46B23 /* WebImageView.swift */; };
 		80BA2E7F2505C82C00E46B23 /* WebImagesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E7E2505C82C00E46B23 /* WebImagesListView.swift */; };
+		80BA2E812505CAEF00E46B23 /* StarView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E802505CAEF00E46B23 /* StarView .swift */; };
+		80BA2E832505CD0F00E46B23 /* StartRatingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA2E822505CD0F00E46B23 /* StartRatingListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		80BA2E7A25046F6100E46B23 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		80BA2E7C2505C40D00E46B23 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		80BA2E7E2505C82C00E46B23 /* WebImagesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImagesListView.swift; sourceTree = "<group>"; };
+		80BA2E802505CAEF00E46B23 /* StarView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StarView .swift"; sourceTree = "<group>"; };
+		80BA2E822505CD0F00E46B23 /* StartRatingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRatingListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				80BA2E732503BD5A00E46B23 /* ThemeView.swift */,
 				80BA2E7C2505C40D00E46B23 /* WebImageView.swift */,
 				80BA2E7E2505C82C00E46B23 /* WebImagesListView.swift */,
+				80BA2E802505CAEF00E46B23 /* StarView .swift */,
+				80BA2E822505CD0F00E46B23 /* StartRatingListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 				808DD9A125034CBF00CF8BC2 /* ImageView.swift in Sources */,
 				807303F925036C8B0082C789 /* StaffModal.swift in Sources */,
 				80BA2E7F2505C82C00E46B23 /* WebImagesListView.swift in Sources */,
+				80BA2E812505CAEF00E46B23 /* StarView .swift in Sources */,
 				80BA2E7B25046F6100E46B23 /* ImageDownloader.swift in Sources */,
 				807303F7250366AE0082C789 /* FizzaListView.swift in Sources */,
 				80BA2E742503BD5A00E46B23 /* ThemeView.swift in Sources */,
@@ -221,6 +228,7 @@
 				80BA2E722503BC9900E46B23 /* ImagePickerView.swift in Sources */,
 				80BA2E762503C69500E46B23 /* ModeSettingsViewModal.swift in Sources */,
 				80BA2E702503740900E46B23 /* SearchBarViewRepresentable.swift in Sources */,
+				80BA2E832505CD0F00E46B23 /* StartRatingListView.swift in Sources */,
 				80BA2E7D2505C40D00E46B23 /* WebImageView.swift in Sources */,
 				808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */,
 				808DD98E250228B300CF8BC2 /* Fizza.xcdatamodeld in Sources */,
