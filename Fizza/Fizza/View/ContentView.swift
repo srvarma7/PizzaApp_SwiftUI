@@ -16,16 +16,22 @@ struct ContentView: View {
             List {
                 
                 NavigationLink("UIImage Picker", destination: ImagePickerView())
+                    .padding()
                 
                 NavigationLink("Multilevel list", destination: FizzaListView())
+                    .padding()
                 
                 NavigationLink("UISearchBar", destination: AllStaffView())
+                    .padding()
                     
                 NavigationLink("User defaults", destination: ThemeView())
+                    .padding()
                 
                 NavigationLink("Web image downloader", destination: WebImagesListView())
+                    .padding()
                 
                 NavigationLink("Rating", destination: StartRatingListView())
+                    .padding()
                 
             }
             .navigationTitle("Home screen")
