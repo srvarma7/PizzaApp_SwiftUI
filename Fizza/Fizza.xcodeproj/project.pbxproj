@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800EC6972506325200B8A89E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EC6962506325200B8A89E /* NotificationView.swift */; };
+		800EC6992506329B00B8A89E /* NotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EC6982506329B00B8A89E /* NotificationBanner.swift */; };
 		807303F52503666E0082C789 /* FizzaModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807303F42503666E0082C789 /* FizzaModal.swift */; };
 		807303F7250366AE0082C789 /* FizzaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807303F6250366AE0082C789 /* FizzaListView.swift */; };
 		807303F925036C8B0082C789 /* StaffModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807303F825036C8B0082C789 /* StaffModal.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		800EC6962506325200B8A89E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		800EC6982506329B00B8A89E /* NotificationBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBanner.swift; sourceTree = "<group>"; };
 		807303F42503666E0082C789 /* FizzaModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzaModal.swift; sourceTree = "<group>"; };
 		807303F6250366AE0082C789 /* FizzaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzaListView.swift; sourceTree = "<group>"; };
 		807303F825036C8B0082C789 /* StaffModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffModal.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		800EC6902506312B00B8A89E /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				800EC6962506325200B8A89E /* NotificationView.swift */,
+				800EC6982506329B00B8A89E /* NotificationBanner.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -280,10 +286,12 @@
 				80BA2E7D2505C40D00E46B23 /* WebImageView.swift in Sources */,
 				808DD989250228B300CF8BC2 /* SceneDelegate.swift in Sources */,
 				808DD98E250228B300CF8BC2 /* Fizza.xcdatamodeld in Sources */,
+				800EC6992506329B00B8A89E /* NotificationBanner.swift in Sources */,
 				807303F52503666E0082C789 /* FizzaModal.swift in Sources */,
 				807303FD2503710A0082C789 /* AllStaffView.swift in Sources */,
 				808DD98B250228B300CF8BC2 /* ContentView.swift in Sources */,
 				808DD99F25022BEB00CF8BC2 /* ImagePickerRepresentableView.swift in Sources */,
+				800EC6972506325200B8A89E /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
